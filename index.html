@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="js/app.js" defer></script>
+    <title>Hola Amor</title>
 </head>
 <body>
-    hola
+    <main>
+        <section>
+            <h1>Calendario</h1>
+            <form id="form-cita">
+                <label for="texto">Título</label>
+                <input type="text" name="texto" id="texto" required>
+                <label for="dia">Día</label>
+                <input type="date" name="dia" id="dia" required>
+                <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora" required>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" ></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+            <h2>Próxima Cita</h2>
+            <ul id="lista-citas">
+                <li>
+                    <h3>Cita 1</h3>
+                    <time datetime="2026-11-28T10:30">28 de noviembre de 2026 a las 10:30 </time>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
